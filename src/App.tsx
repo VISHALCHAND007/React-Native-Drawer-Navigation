@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './screens/Home';
-import Settings from './screens/Settings';
+import Interpolation from './screens/Interpolation';
 import Profile from './screens/FadeIn';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {NavigationContainer} from '@react-navigation/native';
@@ -28,7 +28,7 @@ function App(): React.JSX.Element {
         }}>
         <Drawer.Screen name="Home" component={Home} />
         <Drawer.Screen name="Fade-in" component={Profile} />
-        <Drawer.Screen name="Settings" component={Settings} />
+        <Drawer.Screen name="Interpolation" component={Interpolation} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
