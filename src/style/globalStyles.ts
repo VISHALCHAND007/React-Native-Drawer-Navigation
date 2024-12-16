@@ -20,5 +20,9 @@ export const globalStyles = StyleSheet.create({
     text: {
         fontSize: 16,
         color: '#191970'
+    }, 
+    defPadding: {
+        flex: 1,
+        padding: 15
     }
 })
