@@ -11,6 +11,8 @@ import DocumentPicker from './screens/DocumentPicker';
 import {Provider} from 'react-redux';
 import {store} from './redux/store/store';
 import ReduxOperations from './screens/ReduxOperations';
+import PanGesture from './screens/PanGesture';
+import PinchGesture from './screens/PinchGesture';
 
 function App(): React.JSX.Element {
   const Drawer = createDrawerNavigator();
@@ -41,6 +43,8 @@ function App(): React.JSX.Element {
           <Drawer.Screen name="Animated Card" component={AnimatedCard} />
           <Drawer.Screen name="Document-Picker" component={DocumentPicker} />
           <Drawer.Screen name="Redux Operations" component={ReduxOperations} />
+          <Drawer.Screen name="Pan Gesture" component={PanGesture} />
+          <Drawer.Screen name="Pinch Gesture" component={PinchGesture} />
         </Drawer.Navigator>
       </NavigationContainer>
     </Provider>
